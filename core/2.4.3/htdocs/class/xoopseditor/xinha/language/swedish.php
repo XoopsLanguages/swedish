@@ -12,7 +12,7 @@
  */
  
 /*
- * Assocated with editor_registry.php
+ * Associated with editor_registry.php
  */
 define("_XOOPS_EDITOR_XINHA","Xinha v0.95");
 define("_XOOPS_EDITOR_XINHA_LANGUAGE","se");

@@ -11,7 +11,7 @@
  */
  
 /*
- * Assocated with editor_registry.php
+ * Associated with editor_registry.php
  */
 define("_XOOPS_EDITOR_SPAW2","Spaw Editor v2");
 define("_XOOPS_EDITOR_SPAW2_LANGUAGE","se");
