@@ -1,0 +1,164 @@
+<?php
+/**
+ * @copyright       (c) 2000-2026 XOOPS Project (https://xoops.org)
+ * @license             GNU GPL 2 (https://www.gnu.org/licenses/gpl-2.0.html)
+ * _LANGCODE    sv
+ * _CHARSET     UTF-8
+ */
+define('_AM_SYSTEM_MODULES_ADMIN', 'XOOPS Moduladministration');
+define('_AM_SYSTEM_MODULES_LIST', 'Modullista');
+define('_AM_SYSTEM_MODULES_TOINSTALL', 'Installera modul');
+define('_AM_SYSTEM_MODULES_VALIDATE', 'Validera ändringar');
+define('_AM_SYSTEM_MODULES_SUBMITRES', 'Skicka in resultat');
+define('_AM_SYSTEM_MODULES_RUSUREINS', 'Tryck på knappen nedan för att installera denna modul');
+define('_AM_SYSTEM_MODULES_RUSUREUNINS', 'Är du säker på att du vill avinstallera denna modul?');
+define('_AM_SYSTEM_MODULES_RUSUREUPD', 'Tryck på knappen nedan för att uppdatera denna modul');
+define('_AM_SYSTEM_MODULES_BTOMADMIN', 'XOOPS Moduladministration');
+define('_AM_SYSTEM_MODULES_INSTALLING', 'Installerar ');
+define('_AM_SYSTEM_MODULES_DEACTIVATE', 'Avaktivera ');
+define('_AM_SYSTEM_MODULES_ACTIVATE', 'Aktivera ');
+define('_AM_SYSTEM_MODULES_UPDATING', 'Uppdaterar ');
+define('_AM_SYSTEM_MODULES_INSTALL', 'Installera');
+define('_AM_SYSTEM_MODULES_UNINSTALL', 'Avinstallera');
+define('_AM_SYSTEM_MODULES_UPDATE', 'Uppdatera');
+define('_AM_SYSTEM_MODULES_VIEWLARGE', 'Stor vy');
+define('_AM_SYSTEM_MODULES_VIEWLINE', 'Radvy');
+define('_AM_SYSTEM_MODULES_FAILINS', 'Kan inte installera %s.');
+define('_AM_SYSTEM_MODULES_FAILACT', 'Kunde ej aktivera %s.');
+define('_AM_SYSTEM_MODULES_FAILDEACT', 'Kunde ej inaktivera %s.');
+define('_AM_SYSTEM_MODULES_FAILUPD', 'Kunde ej uppdatera %s.');
+define('_AM_SYSTEM_MODULES_FAILUNINS', 'Kan inte avinstallera %s.');
+define('_AM_SYSTEM_MODULES_FAILORDER', 'Kunde ej ändra ordning på %s.');
+define('_AM_SYSTEM_MODULES_FAILWRITE', 'Kunde ej skriva till huvudmenyn.');
+define('_AM_SYSTEM_MODULES_ALEXISTS', 'Modul %s finns redan.');
+define('_AM_SYSTEM_MODULES_OKINS', 'Modul %s har installerats.');
+define('_AM_SYSTEM_MODULES_OKACT', 'Modul %s har aktiverats.');
+define('_AM_SYSTEM_MODULES_OKDEACT', 'Modul %s har avaktiverats.');
+define('_AM_SYSTEM_MODULES_OKUPD', 'Modul %s har uppdaterats.');
+define('_AM_SYSTEM_MODULES_OKUNINS', 'Modul %s har avinstallerats.');
+define('_AM_SYSTEM_MODULES_OKORDER', 'Modul %s har ändrats.');
+define('_AM_SYSTEM_MODULES_MODULE', 'Modul');
+define('_AM_SYSTEM_MODULES_VERSION', 'Version');
+define('_AM_SYSTEM_MODULES_LASTUP', 'Senaste uppdatering');
+define('_AM_SYSTEM_MODULES_DEACTIVATED', 'Inaktiverad');
+define('_AM_SYSTEM_MODULES_ACTION', 'Åtgärd');
+define('_AM_SYSTEM_MODULES_MENU', 'Meny');
+define('_AM_SYSTEM_MODULES_HIDE', 'Dölj');
+define('_AM_SYSTEM_MODULES_SHOW', 'Visa');
+define('_AM_SYSTEM_MODULES_DUPEN', 'Duplicera modulen i tabellen!');
+define('_AM_SYSTEM_MODULES_DEACTED', 'Den valda modulen har inaktiverats. Du kan nu säkert avinstallera modulen.');
+define('_AM_SYSTEM_MODULES_ACTED', 'Den valda modulen har aktiverats!');
+define('_AM_SYSTEM_MODULES_UPDTED', 'Den valda modulen har uppdaterats!');
+define('_AM_SYSTEM_MODULES_SYSNO', 'Systemmodulen kan inte inaktiveras.');
+define('_AM_SYSTEM_MODULES_STRTNO', 'Denna modulen är satt som din standardförstasida. Vänligen ändra startmodul till vad som passar dina syften.');
+define('_AM_SYSTEM_MODULES_ORDER', 'Ordning');
+define('_AM_SYSTEM_MODULES_ACTIVE', 'Aktiv');
+define('_AM_SYSTEM_MODULES_INACTIVE', 'Inaktiv');
+define('_AM_SYSTEM_MODULES_NOTINSTALLED', 'Inte installerad');
+define('_AM_SYSTEM_MODULES_NOCHANGE', 'Ingen ändring');
+define('_AM_SYSTEM_MODULES_SUBMIT', 'Skicka');
+define('_AM_SYSTEM_MODULES_CANCEL', 'Avbryt');
+define('_AM_SYSTEM_MODULES_DBUPDATE', _AM_SYSTEM_DBUPDATED);
+define('_AM_SYSTEM_MODULES_NEWBLKS', 'New Blocks');
+define('_AM_SYSTEM_MODULES_DEPREBLKS', 'Föråldrade block');
+define('_AM_SYSTEM_MODULES_TABLE_RESERVED', '%s är en reserverat tabell!');
+define('_AM_SYSTEM_MODULES_CREATE_TABLES', 'Skapar tabeller...');
+define('_AM_SYSTEM_MODULES_TABLE_CREATED', 'Tabell %s upprättat');
+define('_AM_SYSTEM_MODULES_INSERT_DATA', '&nbsp;&nbsp; Data insatt i tabellen %s');
+define('_AM_SYSTEM_MODULES_INSERT_DATA_FAILD', 'Kunde inte sätta in %s i databasen.');
+define('_AM_SYSTEM_MODULES_INSERT_DATA_DONE', 'Moduldata infogad framgångsrikt.');
+define('_AM_SYSTEM_MODULES_MODULEID', 'Modul ID: %s');
+define('_AM_SYSTEM_MODULES_SQL_FOUND', 'SQL fil funnit i %s ');
+define('_AM_SYSTEM_MODULES_SQL_NOT_FOUND', 'SQL fil inte funnit i %s');
+define('_AM_SYSTEM_MODULES_SQL_NOT_CREATE', 'FEL: Kunde inte upprättat %s ');
+define('_AM_SYSTEM_MODULES_SQL_NOT_VALID', '%s är inte valid SQL!');
+define('_AM_SYSTEM_MODULES_GROUP_ID', 'Grupp ID: %s ');
+define('_AM_SYSTEM_MODULES_NAME', 'Namn: ');
+define('_AM_SYSTEM_MODULES_VALUE', 'Värde:');
+define('_AM_SYSTEM_MODULES_TEMPLATES_ADD', 'Lägger till mallar...');
+define('_AM_SYSTEM_MODULES_TEMPLATES_DELETE', 'Tar bort mallar...');
+define('_AM_SYSTEM_MODULES_TEMPLATES_UPDATE', 'Uppdaterar mallar...');
+define('_AM_SYSTEM_MODULES_TEMPLATE_ID', 'Mall ID: %s ');
+define('_AM_SYSTEM_MODULES_TEMPLATE_ADD_DATA', 'Mall %s lagt till databasen');
+define('_AM_SYSTEM_MODULES_TEMPLATE_ADD_ERROR', 'FEL: Kunde inte sätta in mallen %s i databasen.');
+define('_AM_SYSTEM_MODULES_TEMPLATE_COMPILED', 'Mall %s utarbetat');
+define('_AM_SYSTEM_MODULES_TEMPLATE_COMPILED_FAILED', 'FEL: Fel vid utarbetningen av mallen %s ');
+define('_AM_SYSTEM_MODULES_TEMPLATE_DELETE_DATA', 'Mallen %s raderat från databasen');
+define('_AM_SYSTEM_MODULES_TEMPLATE_DELETE_DATA_FAILD', 'FEL: Kunde inte radera mallen %s från databasen.');
+define('_AM_SYSTEM_MODULES_TEMPLATE_INSERT_DATA', 'Mallen %s insatt i databasen.');
+define('_AM_SYSTEM_MODULES_TEMPLATE_RECOMPILE', 'Mallen %s återbearbetat.');
+define('_AM_SYSTEM_MODULES_TEMPLATE_RECOMPILE_FAILD', 'FEL: Mallen %s inte återbearbetatas');
+define('_AM_SYSTEM_MODULES_TEMPLATE_RECOMPILE_ERROR', 'FEL: Kunde inte återbearbetate mallen %s');
+define('_AM_SYSTEM_MODULES_TEMPLATE_DELETE_OLD_ERROR', 'FEL: Kunde inte radera mallen %s. Avbryter uppdateringen av denna fil.');
+define('_AM_SYSTEM_MODULES_TEMPLATE_UPDATE', 'Mallen %s uppdaterad.');
+define('_AM_SYSTEM_MODULES_TEMPLATE_UPDATE_ERROR', 'FEL: Kunde inte uppdaterar %s Mall');
+define('_AM_SYSTEM_MODULES_BLOCKS_ADD', 'Lägger till block...');
+define('_AM_SYSTEM_MODULES_BLOCKS_DELETE', 'Ta bort blocken...');
+define('_AM_SYSTEM_MODULES_BLOCKS_REBUILD', 'Bygger om block...');
+define('_AM_SYSTEM_MODULES_BLOCK_ID', 'Block ID: %s');
+define('_AM_SYSTEM_MODULES_BLOCK_ACCESS', 'Lagt till block tillgångsrättigheter');
+define('_AM_SYSTEM_MODULES_BLOCK_ACCESS_ERROR', 'FEL: Kunde inte tillägga block tillgångsrättigheter');
+define('_AM_SYSTEM_MODULES_BLOCK_ADD', 'Block %s lagt till');
+define('_AM_SYSTEM_MODULES_BLOCK_ADD_ERROR', 'FEL: Kunde inte tillägga block %s till databasen');
+define('_AM_SYSTEM_MODULES_BLOCK_ADD_ERROR_DATABASE', 'Databas fel: %s');
+define('_AM_SYSTEM_MODULES_BLOCK_CREATED', 'Block %s upprättat');
+define('_AM_SYSTEM_MODULES_BLOCK_DELETE', 'Block %s raderat');
+define('_AM_SYSTEM_MODULES_BLOCK_DELETE_DATA', 'Block Mall %s raderat från databasen');
+define('_AM_SYSTEM_MODULES_BLOCK_DELETE_ERROR', 'FEL: Kunde inte radera block %s');
+define('_AM_SYSTEM_MODULES_BLOCK_DELETE_TEMPLATE_ERROR', 'FEL: Kunde inte radera block Mall %s från databasen');
+define('_AM_SYSTEM_MODULES_BLOCK_DEPRECATED', 'Block Mall %s underkänt');
+define('_AM_SYSTEM_MODULES_BLOCK_DEPRECATED_ERROR', 'FEL: Kunde inte fjerne underkännelsen av block mallen');
+define('_AM_SYSTEM_MODULES_BLOCK_UPDATE', 'Block %s uppdaterad');
+define('_AM_SYSTEM_MODULES_GONFIG_ID', 'Konfigurations ID: %s');
+define('_AM_SYSTEM_MODULES_MODULE_DATA_ADD', 'Lägger till modul konfigurations data...');
+define('_AM_SYSTEM_MODULES_MODULE_DATA_DELETE', 'Tar bort modul konfigurations muligheder...');
+define('_AM_SYSTEM_MODULES_MODULE_DATA_UPDATE', 'Moduldata uppdaterad.');
+define('_AM_SYSTEM_MODULES_CONFIG_ADD', 'Konfigurations muligheder uppdaterad.');
+define('_AM_SYSTEM_MODULES_CONFIG_DATA_ADD', 'Konfiguration %s lagt till databasen');
+define('_AM_SYSTEM_MODULES_CONFIG_DATA_ADD_ERROR', 'FEL: Kunde inte indsætte konfiguration %s til databasen');
+define('_AM_SYSTEM_MODULES_GONFIG_DATA_DELETE', 'Konfigurations data raderat från databasen. ');
+define('_AM_SYSTEM_MODULES_CONFIG_DATA_DELETE_ERROR', 'FEL: Kunde inte radera konfigurations data från databasen');
+define('_AM_SYSTEM_MODULES_GROUP_SETTINGS_ADD', 'Anger grupprättigheter...');
+define('_AM_SYSTEM_MODULES_GROUP_PERMS_DELETE_ERROR', 'FEL: Kunde inte radera grupprättigheter');
+define('_AM_SYSTEM_MODULES_GROUP_PERMS_DELETED', 'Grupprättigheter raderat');
+define('_AM_SYSTEM_MODULES_ACCESS_ADMIN_ADD', 'Lagt till administrativ tillgång för grupp ID %s');
+define('_AM_SYSTEM_MODULES_ACCESS_ADMIN_ADD_ERROR', 'FEL: Kunde inte tillägga administrativ tillgång för grupp ID %s');
+define('_AM_SYSTEM_MODULES_ACCESS_USER_ADD', 'Lagt till använder tillgång för grupp ID %s');
+define('_AM_SYSTEM_MODULES_ACCESS_USER_ADD_ERROR', 'FEL: Kunde inte tillägga använder tillgång för grupp ID %s');
+define('_AM_SYSTEM_MODULES_FAILED_EXECUTE', 'Fel vid utförande av %s');
+define('_AM_SYSTEM_MODULES_FAILED_SUCESS', '%s utfört');
+define('_AM_SYSTEM_MODULES_DELETE_ERROR', 'FEL: Kunde inte radera %s');
+define('_AM_SYSTEM_MODULES_UPDATE_ERROR', 'FEL: Kunde inte opdaterer %s');
+define('_AM_SYSTEM_MODULES_DELETE_MOD_TABLES', 'Tar bort modultabeller...');
+define('_AM_SYSTEM_MODULES_COMMENTS_DELETE', 'Tar bort kommentarer...');
+define('_AM_SYSTEM_MODULES_COMMENTS_DELETE_ERROR', 'FEL: Kunde inte radera kommentar');
+define('_AM_SYSTEM_MODULES_COMMENTS_DELETED', 'Kommentarer borttagna');
+define('_AM_SYSTEM_MODULES_NOTIFICATIONS_DELETE', 'Tar bort notifikationer...');
+define('_AM_SYSTEM_MODULES_NOTIFICATIONS_DELETE_ERROR', 'FEL: Kunde inte radera meddelanden');
+define('_AM_SYSTEM_MODULES_NOTIFICATIONS_DELETED', 'Notifikationer borttagna');
+define('_AM_SYSTEM_MODULES_TABLE_DROPPED', 'Tabel %s raderat');
+define('_AM_SYSTEM_MODULES_TABLE_DROPPED_ERROR', 'FEL: Kunde inte radera tabellen %s');
+define('_AM_SYSTEM_MODULES_TABLE_DROPPED_FAILDED', 'FEL: Inte tillåten att radera tabellen %s');
+define('_AM_SYSTEM_MODULES_CONFIRM_TIPS', '<ul>
+<li>Kontrollera alla ändringar för validering.</li>
+</ul>');
+define('_AM_SYSTEM_MODULES_INSTALL_TESTDATA', 'Lägg till testdata');
+define('_AM_SYSTEM_MODULES_INSTALL_MORE', 'Installera fler moduler');
+define('_AM_SYSTEM_MODULES_INSTALL_THISMODULE', 'Adminstrationen för den här modulen');
+define('_AM_SYSTEM_MODULES_FK_DISABLE', 'Det gick inte att inaktivera kontroller av främmande nyckel');
+define('_AM_SYSTEM_MODULES_FK_ENABLE', 'Det gick inte att aktivera kontroller av främmande nycklar');
+define('_AM_SYSTEM_MODULES_DROP_FAIL', 'Det gick inte att släppa tabellen: %s');
+define('_AM_SYSTEM_MODULES_DROP_OK', 'Borttagen tabell: %s');
+
+//2.7.1 backfilled translations
+define('_AM_SYSTEM_MODULES_TIPS', '<ul>
+<li>Om du installerar en ny modul, kom ihåg att ställa in modulens inställningar, block och användarbehörigheter!</li>
+<li>För att dölja en modul i huvudmenyblocket, ställ in ordningen till 0.</li>
+<li>Ta bort oanvända modulfiler från din server för att undvika säkerhetsproblem och hålla din webbplats säker.</li>
+<li>För att ändra ordningen på moduler (som visas i menyn) behöver du bara dra och släppa modulerna till önskad plats.</li>
+</ul>');
+define('_AM_SYSTEM_MODULES_ORDER0', '(0 = dölj)');
+define('_AM_SYSTEM_MODULES_ERRORSC', 'Fel:');
+define('_AM_SYSTEM_MODULES_LISTUPBLKS', 'Följande block kommer att uppdateras.<br>Välj de block vars innehåll (mall och alternativ) får skrivas över.<br>');
+//2.7.1
+define('_AM_SYSTEM_MODULES_CONFIG_DATA_INVALID', ' ERROR: Skipped malformed config entry %s. ');
