@@ -1,0 +1,59 @@
+<div class="outer" id="help-template">
+<h1 class="head">Hjälp: Inställningar</h1>
+<h4 class="odd">Beskrivning</h4>
+<p class="even">
+        Inställningspanelerna är där du konfigurerar dina inställningar för hela webbplatsen. Det är värt att ta sig tid att gå igenom dem eftersom vissa inställningar kan ha en betydande inverkan på prestanda, säkerhet och användarvänlighet på din webbplats.
+    </p>
+<h4 class="odd">Allmänna inställningar</h4>
+<p class="even">
+        Dessa är de viktigaste och mest använda inställningarna. Du kommer att ange webbplatsens namn och slogan för din webbplats. Du kommer också att välja standardtema och administratörsgränssnitt. Och om du behöver arbeta på din webbplats kan du stänga den för alla användare. Du kan också ställa in modulomfattande cache
+        gånger.
+    </p>
+<h4 class="odd">Metataggar och sidfot</h4>
+<p class="even">
+        Metataggar ger information om din information – de beskriver din webbplatss karaktär. Deras huvudsakliga användning är att hjälpa sökmotorer och deras robotar att indexera din webbplats korrekt, det vill säga att hjälpa rätt personer att hitta den. Informationen du tillhandahåller ingår i rubriken på varje webbsida
+        sida. Det bör representera innehållet på webbplatsen som helhet - metainformationen är densamma på varje sida, den kan för närvarande inte anpassas för olika moduler eller sidor.<br/><br/>
+
+        Var medveten om att de stora sökmotorerna använder olika strategier för att indexera webbplatser. De kan lägga olika viktningar på metataggar eller till och med ignorera dem helt. Noggrann användning av metainformation kan hjälpa din webbplats att få bättre sökmotorranking, och det är användbart att söka
+        information om indexeringsstrategierna för dina dominerande hänvisare (se din webbplatsloggfil). Detta kan hjälpa dig att optimera din metainformation eller andra aspekter av din webbplatsdesign och innehåll för att förbättra din ranking. <br/><br/>
+
+        Försök att vara korrekt och ärlig när du tillhandahåller metainformation. Försök inte att<em>manipulera</em>’ sökmotorer för att få en bättre ranking – de kanske känner igen detta beteende och din webbplats kan nedgraderas eller svartlistas från deras index.
+
+        <br/><br/>Den <strong>Meta Copyright</strong> och <strong>Sidfot</strong> fält stöder båda två ersättningstaggar för att förenkla underhållet.
+        <br/> - <strong>{X_SITEURL}</strong> kommer att ersättas av den fullständiga URL:en till din webbplats huvudsida.
+        <br/> - <strong>{X_YEAR}</strong> kommer att ersättas av det nuvarande fyrsiffriga året. Det eliminerar behovet av att uppdatera det övre upphovsrättsdatumet varje år.
+    </p>
+<h4 class="odd">Ordcensureringsalternativ</h4>
+<p class="even">
+        XOOPS kan automatiskt censurera oönskade ord som kan postas av besökare på din webbplats och ersätta dem med en generisk, alternativ term som du väljer. Censurfunktionen förbrukar vissa systemresurser och kan sakta ner din webbplats något. Den är inaktiverad som standard.<br/><br/>
+
+        För att implementera censur på din webbplats, välj '<em>aktivera</em>’ radioknapp. Du måste ange en lista med oönskade ord i<em>ord att censurera</em>’-rutan, separerar dem med pipkaraktären. Denna funktion är skiftlägeskänslig. Ange en lämplig ersättningsterm i<em>byt ut
+            dåliga ord med</em>’-rutan. Standard är #OOPS#.
+
+    </p>
+<h4 class="odd">Sökalternativ</h4>
+<p class="even">
+        Sökfunktionen är ett av de viktigaste verktygen för att hitta information på en portalwebbplats. XOOPS-sökningen kategoriserar resultat efter modul – poster identifieras som nyheter, nedladdningar, länkar eller andra typer enligt de moduler du har installerat. <br/><br/>
+
+        Globala sökningar av alla resurser på din webbplats är aktiverade som standard. Om du inaktiverar globala sökningar kommer den här funktionen inte längre att vara tillgänglig och sökblocket kommer inte att fungera.
+        Den förinställda minsta nyckelordslängden för sökningar är fem tecken. Alla termer som är kortare kommer att ignoreras. Detta är användbart för att kontrollera precisionen i sökningar, men inte mycket användning för termer som "webbplatskarta". Korta sökord tenderar att vara vanligare, så de tenderar att ge ett större
+        antal poster, varav många kan vara irrelevanta. Längre sökord tenderar att hämta färre poster men med en högre grad av precision.<br/><br/>
+
+        Att söka är relativt dyrt i beräkningsmässiga termer, så att utesluta korta termer kommer att minska belastningen på servern. Tänk dock på att det ibland är användbart att kunna söka efter en kort sikt.
+
+    </p>
+<h4 class="odd">E-postinställningar</h4>
+<p class="even">
+        Den här delen av kontrollpanelen används för att konfigurera din e-post för systemet. Det rekommenderas att du lämnar e-postleveransmetoden på standardinställningen "PHP (mail)". Du behöver inte fylla i Sendmail- eller SMTP-fälten om du inte använder ett alternativt e-postleveransalternativ.
+    </p>
+<h4 class="odd">Autentiseringsalternativ</h4>
+<p class="even">
+        Lämna det bara i Xoops Database och du kan ignorera alla andra alternativ där.<br/><br/>
+
+        LDAP- eller Microsoft Active Directory-servrar har lagts till för autentisering som ett alternativ till de vanliga Xoops-användarna. Anledningen är att man i många företag redan har en användardatabas i ADS eller LDAP, och de kan använda den för att logga in på XOOPS och behöver inte registrera ännu ett konto.
+    </p>
+<h4 class="odd">Systemmodulinställningar</h4>
+<p class="even">
+        Här kan du aktivera/avaktivera var och en av Systemsektionerna, samt ange systemomfattande standardinställningar, t.ex. för antal visade avatarer eller bilder per sida. Du kan också välja en standardredigerare för block, kommentarer och för alla moduler.
+    </p>
+</div>

@@ -1,0 +1,50 @@
+<div class="outer" id="help-template">
+<h1 class="head">Hjälp: <a class="ui-corner-all tooltip" href="&lt;{$xoops_url}&gt;/modules/profile/admin/index.php" title="Back to the Administration of Profile"> Profil <img alt="Back to the Administration of Profile" src="&lt;{xoAdminIcons 'home.png'}&gt;"/></a></h1>
+ -----Hjälpinnehåll ---------- 
+<h4 class="odd">BESKRIVNING</h4>
+<p class="even">Profilmodulen är till för att hantera anpassade användarprofilfält.</p>
+<h4 class="odd">INSTALLERA/AVINSTALLERA</h4>
+<p>Inga speciella åtgärder krävs, följ standardinstallationsprocessen – extrahera mappen /profile i katalogen ../modules. Installera modulen via Admin -&gt; Systemmodul -&gt; Moduler.</p>
+<p>Detaljerade instruktioner om hur du installerar moduler finns i <a href="https://www.gitbook.com/book/xoops/xoops-operations-guide/" target="_blank" title="XOOPS Operations Manual">XOOPS Bruksanvisning</a> <br/><br/></p>
+<h4 class="odd">DRIFTSINSTRUKTIONER</h4>
+<p class="even">För att ställa in den här modulen måste du:</p>
+<ul>
+<li>Konfigurera dina inställningar för modulen (se 'Inställningar') och eventuellt profilblocket om du tänker använda det (se 'Blockar').</li>
+<li>Redigera befintliga kategorier eller lägg till nya.</li>
+<li>Redigera befintliga fält eller lägg till nya. Här kan du ange vilka fält som ska vara synliga i vilken kategori, och om de ska vara synliga vid användarregistrering.</li>
+<li>Definiera ordningen för registreringsstegen.</li>
+<li>Och slutligen kan du ställa in behörigheter för enskilda fält - vilka är redigerbara, vilka är sökbara.<br/><br/></li>
+</ul>
+<h4 class="odd">Åtgärder mot skräppost</h4>
+<p class="even">För att minimera skräppostregistreringar, gör följande:</p>
+<ul>
+<li> gå till Protector-modulen i Admin, gå till Inställningar och sedan längst ned vid det här alternativet:
+
+            "Stoppa Forum Spam"
+            Kontrollerar POST-data mot spammare registrerade i databasen www.stopforumspam.com. <br/>
+            Ställ in den på "Förbjud IP (ingen gräns)"
+        </li>
+<br/>
+<li> i /class/captcha/config.php, se till att läget är inställt som "text":<br/><br/>
+<span style="font-style: italic;">     return $config = array(<br/>
+    'disabled' =&gt; false, // Inaktivera CAPTCHA<br/>
+    'mode' =&gt; 'text', // standardläge, du kan välja 'text', 'image', 'recaptcha' (kräver api-nyckel)<br/>
+    'name' =&gt; 'xoopscaptcha', // captcha-namn<br/>
+    'skipmember' =&gt; sant, // Hoppa över CAPTCHA-kontroll för medlemmar<br/>
+    'maxattempts' =&gt; 10, // Maximalt antal försök för varje session<br/>
+    );</span></li>
+<br/>
+<li> I profilmodulen, gå till Admin och i det grundläggande steget som finns på:<br/>
+
+            /modules/profile/admin/step.php?id=1<br/>
+
+            ställ in "Spara efter stopp" till "Nej"
+        </li>
+<br/><br/>
+<li> I Profilinställningar, ställ in alternativet "Använd Captcha efter det andra registreringssteget" till "Ja" (det är standard)</li>
+<br/>
+<ul>
+<h4 class="odd">TUTORIAL</h4>
+<p class="even">Handledning kommer snart.<br/></p>
+ -----Hjälpinnehåll ---------- 
+</ul></ul></div>

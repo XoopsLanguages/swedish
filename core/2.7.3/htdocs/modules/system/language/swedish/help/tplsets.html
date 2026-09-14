@@ -1,0 +1,36 @@
+<div class="outer" id="help-template">
+<h1 class="head">Hjälp: Mallar</h1>
+<h4 class="odd">Beskrivning</h4>
+<p class="even">
+        XOOPS tillåter viss åtskillnad mellan den faktiska presentationen av webbplatsen (den "<em>hud</em>” eller användargränssnitt) och koden som körs på baksidan. Den första hanteras av en sofistikerad mekanism baserad på grafiska teman. Ett tema kan i sin grundläggande form innehålla den grundläggande HTML-koden
+        mallar som definierar det visuella gränssnittet för webbplatsen, såväl som de stilmallar och bilder som behövs för att komplettera det visuella gränssnittet. Teman kan bytas i det administrativa gränssnittet, så att ändra hela utseendet på en XOOPS-webbplats är det bara en fråga om att ändra värdet på en
+        väljare och klicka på "Acceptera". XOOPS ger också webbplatsadministratörer möjligheten att låta användare välja bland några tillgängliga teman.<br/><br/>
+
+        Generellt sett, en <strong><em>tema</em></strong> är det visuella ramverket på hög nivå för en webbplats: temat definierar till exempel webbplatsens allmänna layout; å andra sidan definierar den vanligtvis inte den specifika distributionen av innehåll inom ett block. Detta hanteras av en
+        annan enhet som kallas en <em><strong>malluppsättning</strong></em>. En malluppsättning<em> </em>är en ensemble av HTML-mallar som definierar presentationen av innehåll inom alla block som bildar en XOOPS-webbplats. Om vi vill ha en tydligare metafor för detta kan vi säga att temat är som
+        arkitekten av ett hus, medan malluppsättningen är som inredningsarkitekten. Den första sätter väggarna och definierar den allmänna fördelningen, men det är den andra som är ansvarig för "<em>dressing</em>” de där väggarna.<br/><br/>
+
+        Om det aktiva temat är enkelt som bara innehåller en temafil, CSS-filer och några bilder, använder XOOPS standardmallsuppsättningen för att definiera presentationen av block. Vissa komplexa teman är dock sofistikerade nog att inkludera en egen malluppsättning. I det här fallet webbplatsen
+        administratören måste använda det administrativa gränssnittet för att ställa in både temat och malluppsättningen. <br/><br/>
+
+        Hur är temat <em>magi</em> genomfört? Det vill säga, hur kan HTML-mallar inkludera dynamiskt innehåll? Detta görs inte med speglar och rök, utan med en smart mallmotor som kallas
+        <strong><a href="https://www.smarty.net/" rel="external">Smart</a></strong> som gör funktionen för vad som brukade kallas
+        <em><strong>variabel interpolation</strong></em>. Uttryckt på ett enkelt sätt kan vi säga att XOOPS-systemet använder PHP-filer för att hålla modulernas logik (tillgång till databasen, tilldelning av variabler, hantering av rättigheter...), HTML-filer med Smarty-variabler infogade för att hantera
+        faktiska visuella gränssnittet och Smarty-motorn för att infoga värden och strängar på specifika platser i HTML-koden som bygger sidorna som slutanvändaren ser. Allt som allt, vad detta betyder för dig kan enkelt sammanfattas: tack vare sitt temasystem låter XOOPS webbplatsdesigner bygga mer
+        intressanta och visuellt fantastiska platser utan större oro för vad som händer under huven.
+    </p>
+<h4 class="odd">Kloning och nedladdning av malluppsättningar</h4>
+<p class="even">
+        Om du vill skapa en anpassad malluppsättning kan du göra en kopia av standarduppsättningen (eller någon annan) genom att välja '<em>klon</em>’-länk (du kommer att bli ombedd att ge den nya uppsättningen ett namn). Till skillnad från standarden kan andra malluppsättningar redigeras fritt. Du kan också spara en kopia av en
+        mallen ställs in på disk genom att välja '<em>ladda ner</em>'-länken eller ta bort den med '<em>radera</em>' länk. Du kan också ibland se en ytterligare '<em>Generera</em>’ länk bredvid nya moduler för vilka mallar ännu inte har skapats.
+    </p>
+<h4 class="odd">Redigera mallar</h4>
+<p class="even">
+        Du kan se en fullständig lista över tillgängliga mallar genom att bläddra i katalogens trädvy. När du väljer en mall kommer XOOPS att öppna den i en editor där du kan redigera den. <br/><br/>
+
+        När du redigerar mallar måste du aktivera en inställning som automatiskt uppdaterar .tpl-filer för modulmall om det finns nyare filer under katalogen teman/ditt tema/mallar för det aktuella temat (Systemmodul -&gt; Inställningar -&gt; Allmänna inställningar -&gt; Uppdatera .tpl-filer för modulmall
+        från temakatalogen/ditt tema/mallar? -&gt; '<em>Ja</em>’). Detta bör stängas av när webbplatsen blir offentlig.<br/><br/>
+        Om du av misstag förstör en mall, glöm inte att du kan hämta en<em>bra</em>’ kopia från standardmallsuppsättningen. Om du arbetar med icke-standardiserade mallar kan det vara en bra idé att spara en kopia på disken innan du börjar ändra dem.
+
+    </p>
+</div>
